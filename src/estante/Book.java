@@ -40,10 +40,10 @@ public class Book {
     this.price = price;
   }
   
-  public void discount(double discount){
-    if (discount < 30){
-      discount /= 100;
-      this.price -= this.price * discount;
+  public void discount(double value){
+    if (value < 101){
+      value /= 100;
+      this.price -= this.price * value;
     }
   }
   
@@ -66,7 +66,8 @@ public class Book {
     if(autor != null){
         autor.showAll();
     }
-   
+    
+    
    for(int i = 1; i <= 30; i++){
      System.out.print("-");
    }
